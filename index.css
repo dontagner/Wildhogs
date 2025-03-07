@@ -2,64 +2,54 @@
     padding: 0;
     margin: 0;
     outline: 1px dotted red;
+    box-sizing: border-box;
 }
 
 body, html {
     height: 100%;
     width: 100%;
-    display: flex;
     overflow-x: auto; /* Möjliggör horisontell scroll */
     overflow-y: hidden; /* Förhindrar vertikal scroll */
-    box-sizing: border-box;
-}
-
-.box {
     display: flex;
-    height: 100vh; /* Full höjd */
-    width: 200vw; /* Breddar boxen så att vi kan scrolla horisontellt */
 }
 
-.bild {
+.container {
+    display: flex;
+    width: 200vw; /* Tillräckligt brett för att kunna scrolla */
+    height: 100vh;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumner */
+    grid-template-rows: repeat(2, 1fr); /* 2 rader */
+    width: 100vw; /* Hela skärmen */
+    height: 100vh;
+}
+
+.ruta {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #919713;
+    border: 2px solid rgb(255, 255, 255);
     overflow: hidden;
 }
 
-.bild img {
+.ruta img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Gör så att bilden fyller hela rutan */
 }
 
+/* Infoboxen som ligger till höger och som man scrollar till */
 .info {
-    width: 30vw; /* Info-sektionen tar upp en vybredd */
-    background-color: #919713;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Säkerställ att den inte orsakar vertikal scroll */
-    overflow: hidden; /* Säkerställer att inget innehåll i .info skapar scroll */
-    align-items: center;
-    justify-content: center;
-}
-.knappbox{
-    width: 15vw;
-    height:30vh;
+    width: 30vw; /* Hela skärmens bredd */
+    height: 100vh;
+    background-color: #362b17;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.merch,.kontakt{
-    display: flex;
-
-}
-
-a{
-    color: black;
-    font-size: 25px;
-    font-family: "roboto",sans-serif;
-    text-decoration: none;
-    background-color: #f7d08d;  
-    border-radius: 20px;
-    
+    color: white;
+    font-size: 30px;
 }
