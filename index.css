@@ -23,8 +23,6 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw; /* En hel vybredd */
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -36,9 +34,32 @@ body, html {
 
 .info {
     width: 30vw; /* Info-sektionen tar upp en vybredd */
-    background-color: #571d1d;
+    background-color: #919713;
     display: flex;
     flex-direction: column;
     height: 100vh; /* Säkerställ att den inte orsakar vertikal scroll */
     overflow: hidden; /* Säkerställer att inget innehåll i .info skapar scroll */
+    align-items: center;
+    justify-content: center;
+}
+.knappbox{
+    width: 15vw;
+    height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.merch,.kontakt{
+    display: flex;
+
+}
+
+a{
+    color: black;
+    font-size: 25px;
+    font-family: "roboto",sans-serif;
+    text-decoration: none;
+    background-color: #f7d08d;  
+    border-radius: 20px;
+    
 }
