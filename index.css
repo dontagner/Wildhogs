@@ -25,14 +25,14 @@ body, html {
     grid-template-rows: repeat(2, 1fr); /* 2 rader */
     width: 100vw; /* Hela skärmen */
     height: 100vh;
+    position: relative; /* Viktigt för absolut positionering av text */
 }
 
 .ruta {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #919713;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #d9b57c;
     overflow: hidden;
 }
 
@@ -42,14 +42,61 @@ body, html {
     object-fit: cover; /* Gör så att bilden fyller hela rutan */
 }
 
+/* Stil för texten som ligger över alla bilder */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw; /* Storlek anpassad efter skärmen */
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Lägger till skugga för bättre läsbarhet */
+    z-index: 10; /* Ser till att texten ligger över bilderna */
+    text-transform: uppercase;
+}
+
 /* Infoboxen som ligger till höger och som man scrollar till */
 .info {
-    width: 30vw; /* Hela skärmens bredd */
+    width: 40vw;
     height: 100vh;
-    background-color: #362b17;
+    background-color: #d9b57c;
+    display: flex;
+    flex-direction: column; /* Staplar texten och knapparna vertikalt */
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+a{
+    color: white;
+    display: flex;
+    text-decoration:none;
+    font-family: "roboto",sans-serif;
+    font-size: 25px;
+    
+}
+.text {
+    text-align: center; /* Centrerar texten */
+    margin-bottom: 20px; /* Skapar utrymme mellan text och knappar */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.knappar {
+    display: flex;
+    width: 20vw;
+    height: 25vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.merchbox,.kontaktbox{
+    background-color: black;
+    width: 8vw;
+    height:10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 30px;
+    border-radius: 25px;
 }
