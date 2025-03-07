@@ -9,13 +9,14 @@ body, html {
     width: 100%;
     display: flex;
     overflow-x: auto; /* Möjliggör horisontell scroll */
+    overflow-y: hidden; /* Förhindrar vertikal scroll */
     box-sizing: border-box;
 }
 
 .box {
     display: flex;
     height: 100vh; /* Full höjd */
-    width: 200vw; /* Breddar boxen så att vi kan scrolla */
+    width: 200vw; /* Breddar boxen så att vi kan scrolla horisontellt */
 }
 
 .bild {
@@ -38,4 +39,6 @@ body, html {
     background-color: #571d1d;
     display: flex;
     flex-direction: column;
+    height: 100vh; /* Säkerställ att den inte orsakar vertikal scroll */
+    overflow: hidden; /* Säkerställer att inget innehåll i .info skapar scroll */
 }
