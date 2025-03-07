@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    outline: 1px dotted red;
+    --outline: 1px dotted red;
     box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #d9b57c;
+    border: 2px solid #4f4c47;
     overflow: hidden;
 }
 
@@ -60,7 +60,7 @@ body, html {
 .info {
     width: 40vw;
     height: 100vh;
-    background-color: #d9b57c;
+    background-color: #4f4c47;
     display: flex;
     flex-direction: column; /* Staplar texten och knapparna vertikalt */
     align-items: center;
@@ -92,7 +92,7 @@ a{
     justify-content: space-between;
 }
 .merchbox,.kontaktbox{
-    background-color: black;
+    background-color: #32312f;
     width: 8vw;
     height:10vh;
     display: flex;
