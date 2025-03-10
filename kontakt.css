@@ -1,0 +1,36 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4f4c47; /* Lätt genomskinlig bakgrund */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    z-index: 1000; /* Säkerställer att den är överst */
+}
+.hem,.kontakt{
+    background-color: #32312f;
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 30px; /* Ökar storleken på knapparna */
+    font-size: 18px; /* Passande storlek för texten */
+    text-align: center;
+    width: auto; /* Låt knapparna ta den plats de behöver */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover-effekt */
+}
+
+a{
+    color:white;
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
