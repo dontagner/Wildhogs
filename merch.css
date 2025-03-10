@@ -104,11 +104,12 @@ a{
   .profile-box1 .tooltiptext1,.profile-box2 .tooltiptext2, .profile-box3 .tooltiptext3, .profile-box4 .tooltiptext4 {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: #32312f;
     color: #fff;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
+    margin-left: 40px;
    
     /* Position the tooltip text - see examples below! */
     position: absolute;
