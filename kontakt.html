@@ -9,7 +9,23 @@
 <body>
     <div class="topbar">
         <div class="hem"><a href="index.html">Hem</a></div>
-        <div class="merch"><a href="merch.html">Kontakt</a></div>
+        <div class="merch"><a href="merch.html">Merch</a></div>
+    </div>
+    <div class="contact-container">
+        <h2>Kontakta oss</h2>
+        <p>Har du några frågor angående medlemsskap? <br> Fyll i formuläret nedan så återkommer vi till dig!</p>
+        <form>
+            <label for="name">Namn</label>
+            <input type="text" id="name" placeholder="Ditt namn" required>
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" placeholder="Din e-postadress" required>
+
+            <label for="message">Meddelande</label>
+            <textarea id="message" placeholder="Skriv ditt meddelande här..." required></textarea>
+
+            <button type="submit" disabled>Skicka</button>
+        </form>
     </div>
 </body>
 </html>

@@ -77,7 +77,7 @@ a{
     margin-top: 20px; /* You can adjust this if needed */
     padding: 0; /* Set padding to zero */
 }
-.profile-box {
+.profile-box1,.profile-box2,.profile-box3,.profile-box4 {
     background: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -87,15 +87,35 @@ a{
     text-align: center;
     padding: 15px;
 }
-.profile-box img {
+.profile-box1 img,.profile-box2 img,.profile-box3 img,.profile-box4 img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
-.profile-box h3 {
+.profile-box1 h3,.profile-box2 h3,.profile-box3 h3,.profile-box4 h3 {
     margin: 10px 0 5px;
 }
-.profile-box p {
+.profile-box1 p,.profile-box2 p,.profile-box3 p,.profile-box4 p {
     color: #555;
 }
+  
+  /* Tooltip text */
+  .profile-box1 .tooltiptext1,.profile-box2 .tooltiptext2, .profile-box3 .tooltiptext3, .profile-box4 .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .profile-box1:hover .tooltiptext1, .profile-box2:hover .tooltiptext2, .profile-box3:hover .tooltiptext3, .profile-box4:hover .tooltiptext4{
+    visibility: visible;
+  }
