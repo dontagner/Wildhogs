@@ -14,7 +14,7 @@
     font-size: 20px;
     z-index: 1000; /* Säkerställer att den är överst */
 }
-.hem,.kontakt{
+.hem,.kontakt,.plats{
     background-color: #32312f;
     outline: 1px solid black;
     border-radius: 10px;
@@ -60,7 +60,7 @@ a{
     width: 200px;
     gap: 20px;
     margin-left: 40%;
-    color: black;
+    color: rgb(164, 147, 147);
     padding: 0; /* Set padding to zero */
 }
 .links a {
@@ -97,7 +97,7 @@ a{
     margin: 10px 0 5px;
 }
 .profile-box1 p,.profile-box2 p,.profile-box3 p,.profile-box4 p {
-    color: #555;
+    color: #f7e8e8;
 }
   
   /* Tooltip text */
@@ -120,3 +120,16 @@ a{
   .profile-box1:hover .tooltiptext1, .profile-box2:hover .tooltiptext2, .profile-box3:hover .tooltiptext3, .profile-box4:hover .tooltiptext4{
     visibility: visible;
   }
+
+p{
+    background-color: #32312f;
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    
+}

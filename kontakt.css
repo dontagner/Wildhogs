@@ -14,7 +14,7 @@
     font-size: 20px;
     z-index: 1000; /* Säkerställer att den är överst */
 }
-.hem,.merch{
+.hem,.merch,.plats{
     background-color: #32312f;
     outline: 1px solid black;
     border-radius: 10px;
@@ -90,7 +90,7 @@ textarea {
 }
 
 button {
-    background: #ccc;
+    background: #565353;
     color: white;
     border: none;
     padding: 10px;
@@ -98,4 +98,8 @@ button {
     border-radius: 5px;
     font-size: 16px;
     
+}
+button:hover{
+    background-color: #ccc;
+    transition:background-color 0.3s ease;
 }
